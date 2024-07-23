@@ -13,7 +13,6 @@ Pod::Spec.new do |s|
   s.cocoapods_version = '>= 1.7.0'
 
   s.dependency 'HeapSwiftCore', '~> 0.6.1'
-  s.dependency 'CS_iOS_SDK', '~> 4.33'
 
   s.source_files = 'Sources/HeapContentsquareIntegrationSDK/**/*.swift'
   s.vendored_frameworks = 'HeapContentsquareIntegrationImplementation.xcframework'
