@@ -12,15 +12,13 @@ let package = Package(
             targets: ["HeapContentsquareIntegrationSDK"])
     ],
     dependencies: [
-        .package(url: "https://github.com/heap/heap-swift-core-sdk.git", from: "0.6.1"),
-        .package(url: "https://github.com/ContentSquare/CS_iOS_SDK.git", from: "4.33.0"),
+        .package(url: "https://github.com/heap/heap-swift-core-sdk.git", from: "0.6.1")
     ],
     targets: [
         .target(
             name: "HeapContentsquareIntegrationSDK",
             dependencies: [
                 .product(name: "HeapSwiftCore", package: "heap-swift-core-sdk"),
-                .product(name: "ContentsquareModule", package: "CS_iOS_SDK"),
                 "HeapContentsquareIntegrationImplementation",
             ]),
         .binaryTarget(
